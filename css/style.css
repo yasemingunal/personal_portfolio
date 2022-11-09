@@ -1,14 +1,44 @@
 body{
     font-family: tahoma;
 }
-
-.nav_links *{
-    display:flex;
-    justify-content:space-evenly;
-    /* flex-direction:row;
-    flex-wrap:nowrap;
-    height:50px;
-    background-color:lemonchiffon;
-    justify-items:space-between;
-    justify-content:center; */
+ /* PART 1: STYLING NAVIGATION BAR */
+.nav_links{
+    list-style:none;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-items:center;
+    align-items:center;
+    /* background-color: lightsteelblue; */
+    padding:25px;
 }
+
+.nav_links a:link{
+    padding:12px;
+    border: 2px solid royalblue;
+    text-decoration:none;
+    font-weight:bold;
+}
+.nav_links a:hover{
+    text-decoration:underline;
+    background-color:white;
+    border: 5px solid;
+}
+
+.navlinks a:visited, .nav_links a:focus, .nav_links a:hover{
+}
+
+/* PART 2: STYLING INTRO CLASS */
+
+.intro { 
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 40px;
+    justify-items:end;
+    align-items:center;
+}
+
+
+/* .intro p{
+    grid-row:1;
+    grid-column-start:-1;
+} */
