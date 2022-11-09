@@ -1,0 +1,14 @@
+body{
+    font-family: tahoma;
+}
+
+.nav_links *{
+    display:flex;
+    justify-content:space-evenly;
+    /* flex-direction:row;
+    flex-wrap:nowrap;
+    height:50px;
+    background-color:lemonchiffon;
+    justify-items:space-between;
+    justify-content:center; */
+}
