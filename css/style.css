@@ -1,31 +1,36 @@
 body{
     font-family: tahoma;
 }
+
+header{
+    background-color:steelblue;
+    padding:3px;
+    margin:20px 0px;
+}
+
  /* PART 1: STYLING NAVIGATION BAR */
+
 .nav_links{
+    display:flex;
     list-style:none;
-    display:grid;
-    grid-template-columns: auto auto auto;
-    justify-items:center;
-    align-items:center;
-    /* background-color: lightsteelblue; */
-    padding:25px;
+}
+
+.nav_links a{
+    color:white;
 }
 
 .nav_links a:link{
     padding:12px;
-    border: 2px solid royalblue;
+    text-transform:uppercase;
     text-decoration:none;
-    font-weight:bold;
 }
 .nav_links a:hover{
     text-decoration:underline;
-    background-color:white;
-    border: 5px solid;
+    font-weight:bold
 }
 
-.navlinks a:visited, .nav_links a:focus, .nav_links a:hover{
-}
+/* .navlinks a:visited, .nav_links a:focus, .nav_links a:hover{
+} */
 
 /* PART 2: STYLING INTRO CLASS */
 
@@ -37,6 +42,9 @@ body{
     align-items:center;
 }
 
+.intro img {
+    width:100px;
+}
 
 /* .intro p{
     grid-row:1;
