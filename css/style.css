@@ -1,22 +1,28 @@
 body{
-    font-family: tahoma;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+    /* background-color:ivory; */
 }
 
 header{
-    background-color:steelblue;
-    padding:3px;
-    margin:20px 0px;
+    /* background-color:white; */
+    padding:3px 20px;
+    margin:20px 0px 50px;
 }
+
+/* footer { 
+
+} */
 
  /* PART 1: STYLING NAVIGATION BAR */
 
-.nav_links{
-    display:flex;
+.nav_links li{
+    display:inline;
     list-style:none;
+    float:right;
 }
 
 .nav_links a{
-    color:white;
+    color:black;
 }
 
 .nav_links a:link{
@@ -24,29 +30,50 @@ header{
     text-transform:uppercase;
     text-decoration:none;
 }
-.nav_links a:hover{
+.nav_links a:hover, .active{
     text-decoration:underline;
     font-weight:bold
 }
 
-/* .navlinks a:visited, .nav_links a:focus, .nav_links a:hover{
-} */
-
-/* PART 2: STYLING INTRO CLASS */
+/* ---- ABOUT SECTION ------ */
 
 .intro { 
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 40px;
+    grid-template-columns: 40% 55%;
+    column-gap: 12px;
     justify-items:end;
     align-items:center;
 }
 
 .intro img {
-    width:100px;
+    width:150px;
 }
 
-/* .intro p{
-    grid-row:1;
-    grid-column-start:-1;
-} */
+/* ---- BLOG SECTION ------ */
+.entertainment_gallery{
+    display:grid;
+    align-items:center;
+    grid-template-columns:1fr 4fr;
+    column-gap:5px;
+
+}
+
+.projects{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+
+@media only screen and (min-width: 600px){
+    .intro{
+        grid-template-columns: 1fr 1fr;
+        justify-items:center;
+        justify-content:center;
+        column-gap:0px;
+        padding: 20px;
+    }
+    .intro img { 
+        width:250px;
+    }
+}
