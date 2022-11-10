@@ -57,13 +57,38 @@ header{
     column-gap:5px;
 
 }
+/* ---- PROJECTS SECTION ------ */
+.container > h2, .overview{
+    text-align:center;
+}
 
-.projects{
+.projects { 
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
+    /* flex-flow:column wrap; */
 }
 
+.project > header{
+    /* background-color:lavender;
+    border: solid 2px thistle; */
+    text-align:center;
+    padding:0px;
+    margin:0px;
+}
+
+.project { 
+    display:flex;
+    flex-direction:column;
+    border: solid 5px black;
+    border-radius:20px;
+    padding:10px;
+    margin:10px;
+}
+
+/* .github a::before{
+    content: url("/images/githublogo.png");
+} */
 
 @media only screen and (min-width: 600px){
     .intro{
