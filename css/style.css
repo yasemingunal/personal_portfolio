@@ -55,10 +55,47 @@ header{
     align-items:center;
     grid-template-columns:1fr 4fr;
     column-gap:5px;
-
 }
+.amspics{
+    display:grid;
+    justify-content:center;
+}
+
+.blog_options{
+    display:grid;
+    grid-template-columns: 1fr;
+    /* justify-items:stretch; */
+}
+
+.blog_options a:link{
+    text-decoration:none;
+    color:black;
+}
+
+
+.skip_button{
+    border: 2px solid purple;;
+    background-color:thistle;
+    padding: 10px;
+    margin:2px;
+}
+.blog_options li{
+    list-style:none;
+    text-align:center;
+    /* border: 2px solid purple;;
+    background-color:thistle;
+    padding:0px;
+    margin:5px; */
+}
+
+
+.blog_options a:hover{
+    font-weight:bold;
+    text-decoration:underline;
+}
+
 /* ---- PROJECTS SECTION ------ */
-.container > h2, .overview{
+.container > h2, .container > h1, .overview{
     text-align:center;
 }
 .github{
