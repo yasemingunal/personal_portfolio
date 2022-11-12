@@ -61,11 +61,16 @@ header{
 .container > h2, .overview{
     text-align:center;
 }
+.github{
+    text-align:center;
+}
 
 .projects { 
     display:flex;
-    flex-wrap:wrap;
+    flex-flow: row wrap;
     justify-content:center;
+    align-content:center;
+    /* gap:15px; */
     /* flex-flow:column wrap; */
 }
 
@@ -73,24 +78,27 @@ header{
     /* background-color:lavender;
     border: solid 2px thistle; */
     text-align:center;
-    padding:0px;
+    /* padding:0px; */
     margin:0px;
 }
 
 .project { 
     display:flex;
-    flex-direction:column;
+    flex-flow: column wrap;
     border: solid 5px black;
     border-radius:20px;
-    padding:10px;
+    padding:15px;
     margin:10px;
+    flex-basis: 350px;
+    align-items:center;
 }
 
 /* .github a::before{
     content: url("/images/githublogo.png");
 } */
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 650px){
+    /* ---- ABOUT SECTION ------ */
     .intro{
         grid-template-columns: 1fr 1fr;
         justify-items:center;
@@ -100,5 +108,17 @@ header{
     }
     .intro img { 
         width:250px;
+    }
+
+    /* ---- PROJECTS SECTION ------ */
+    .project { 
+        flex-basis:400px;
+    }
+
+}
+
+@media only screen and (min-width: 800px) {
+    .project { 
+        flex-basis:40%;
     }
 }
