@@ -40,13 +40,33 @@ header{
 .intro { 
     display: grid;
     grid-template-columns: 40% 55%;
-    column-gap: 12px;
+    column-gap: 30px;
+    padding:40px;
     justify-items:end;
     align-items:center;
 }
 
 .intro img {
-    width:150px;
+    padding-left:10px;
+    width:200px;
+}
+
+.contact-form{
+    display:inline-block;
+    margin: 0 15% 0 15%;
+    width:60%;
+    text-align:center;
+    padding:20px;
+    /* margin:5px; */
+    border: 2px solid tan;
+}
+
+.contact-form input[type=text], legend{
+    margin:5px;
+    border: 2px tan solid;
+    padding:10px;
+    text-transform:uppercase;
+    width:200px;
 }
 
 /* ---- BLOG SECTION ------ */
@@ -56,8 +76,14 @@ header{
     grid-template-columns:1fr 4fr;
     column-gap:5px;
 }
-.amspics{
+
+.travellist img{
+    width:300px;
+}
+
+#travel{
     display:grid;
+    grid-template-columns:1fr;
     justify-content:center;
 }
 
@@ -88,11 +114,15 @@ header{
     margin:5px; */
 }
 
-
 .blog_options a:hover{
     font-weight:bold;
     text-decoration:underline;
 }
+
+.container h2, .travel-intro{
+    text-align:center;
+}
+
 
 /* ---- PROJECTS SECTION ------ */
 .container > h2, .container > h1, .overview{
@@ -129,6 +159,22 @@ header{
     flex-basis: 350px;
     align-items:center;
 }
+.skills{
+    text-align:center;
+}
+.skills-gallery{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    border:2px solid blue;
+    border-radius:25% 50%;
+
+}
+.skills-gallery img{
+    width:50px;
+    padding:5px;
+    margin:20px;
+}
 
 /* .github a::before{
     content: url("/images/githublogo.png");
@@ -139,12 +185,16 @@ header{
     .intro{
         grid-template-columns: 1fr 1fr;
         justify-items:center;
-        justify-content:center;
+        /* justify-content:center; */
         column-gap:0px;
-        padding: 20px;
+        padding:20px;
     }
     .intro img { 
         width:250px;
+    }
+
+    .contact-form input[type=text], legend{
+        width: 300px;
     }
 
     /* ---- PROJECTS SECTION ------ */
@@ -157,5 +207,8 @@ header{
 @media only screen and (min-width: 800px) {
     .project { 
         flex-basis:40%;
+    }
+    .contact-form input[type=text], legend{
+        width: 400px;
     }
 }
