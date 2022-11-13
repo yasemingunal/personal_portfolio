@@ -19,21 +19,52 @@
         </nav>
     </header>
     <main class="container" id = "main">
-      <h1>A miniature blog!</h1>
-        <div class = "travel">
+      <h1>My miniature blog!</h1>
+      <div class="blog_options">
+        <li><button class="skip_button"><a href="#travel">Travel</a></button></li>
+        <li><button class="skip_button"><a href="#entertainment">Media</a></button></li>
+        <li><button class="skip_button"><a href="#running">Running</a></button></li>
+      </div>
+        <div id= "travel">
+          <div class="travel-intro">
           <h2>Favorite places I've travelled:</h2>
-          <ol class="travellist">
-            <h3><li>Amsterdam</li></h3>
-            <div class="amspics">
-              <img id="ams1" src="images/IMG_9894.JPG" alt="Film Pic from Ams." width="400px">
-              <img id="ams2" src="images/DSC00077.JPG" alt="Film Pic from Ams." width="400px">
-          </div>
-            <h3><li>London</li></h3>
-            <h3><li>Turkey</li></h3>
-          </ol>
+          <p>I absolutely love to travel and immerse myself into new cultures. I have been lucky enough to explore some beautiful countries recently,
+            so here are a few of my travel highlights from recent years.
+          </p>
         </div>
-        <div class="entertainment">
-          <h2>Podcasts I highly recommend:</h2>
+          <div class="travellist">
+            <div class="location">
+            <h3>Amsterdam</h3>
+              <img id="ams1" src="images/bikesams.JPG" alt="Film Pic from Ams.">
+              <p>Credits to my sister and best travel buddy, my sister, for her film camera which provided 
+                this beautiful shot in the city center.
+              </p>
+              <img id="ams2" src="images/canal.png" alt="Film Pic from Ams.">
+              <p>Some more canals!</p>
+              <img id="ams3" src="images/palace.JPG" alt="Film Pic from Ams.">
+              <p>We went on a few tours throughout the visit, but my favorite was an audio guided tour
+                of the Royal Palace. The interior was gorgeous... from paintings, to sculptures, to the story
+                behind all of the artwork... I was star-struck to say the least.</p>
+              <iframe width="200" src="https://www.youtube.com/embed/IlemR8Zyq20">
+                </iframe>
+            </div>
+            <div class="location">
+            <h3>London</h3>
+              <img id="lon1" src="images/england.png" alt="London Pic">
+              <p>caption</p>
+              <img id="lon2" src="images/bath.png" alt="London Pic">
+              <p>caption</p>
+            </div>
+            <div class="location">
+              <h3>Turkey</h3>
+              <img id="turkey1" src="" alt="Turkey Pic">
+              <p>caption</p>
+            </div>
+            
+          </div>
+        </div>
+        <div id="entertainment">
+          <h2>Media I highly reccommend</h2>
           <div class="entertainment_gallery">
             <img id="smartless" src="images/smartless.jpeg" alt="Smartless Podcast Img" width="100"/>
             <p>Whenever I'm in need of comic-relief from school, I'll either opt for 'Smartless' or 'Armchair Expert'... 
@@ -49,8 +80,12 @@
               </div>
             </p>
           </div>
-        </div>
+          <div id="running">
+            <h2>Running Journey - under construction</h2>
+          </div>
+
   </main>
+  <!-- <script src="js/amsvlog.js"></script> -->
     <footer>
         <p> Yasemin Gunal &copy; 2022</p>
     </footer>
