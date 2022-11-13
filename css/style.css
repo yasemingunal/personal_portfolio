@@ -1,10 +1,8 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
-    /* background-color:ivory; */
 }
 
 header{
-    /* background-color:white; */
     padding:3px 20px;
     margin:20px 0px 50px;
 }
@@ -37,28 +35,26 @@ header{
 
 /* ---- ABOUT SECTION ------ */
 
-.intro { 
-    display: grid;
-    grid-template-columns: 40% 55%;
-    column-gap: 30px;
-    padding:40px;
-    justify-items:end;
+
+.intro{
+    display:grid;
+    grid-template-columns:auto auto;
+    column-gap:10px;
     align-items:center;
+    padding:10px;
 }
 
 .intro img {
     padding-left:10px;
-    width:200px;
+    width:150px;
 }
 
 .contact-form{
-    display:inline-block;
-    margin: 0 15% 0 15%;
-    width:60%;
+    display:flex;
+    justify-content:center;
     text-align:center;
     padding:20px;
-    /* margin:5px; */
-    border: 2px solid tan;
+    /* border: 2px solid tan; */
 }
 
 .contact-form input[type=text], legend{
@@ -87,31 +83,14 @@ header{
     justify-content:center;
 }
 
-.blog_options{
-    display:grid;
-    grid-template-columns: 1fr;
-    /* justify-items:stretch; */
-}
-
 .blog_options a:link{
     text-decoration:none;
     color:black;
 }
 
-
-.skip_button{
-    border: 2px solid purple;;
-    background-color:thistle;
-    padding: 10px;
-    margin:2px;
-}
 .blog_options li{
     list-style:none;
     text-align:center;
-    /* border: 2px solid purple;;
-    background-color:thistle;
-    padding:0px;
-    margin:5px; */
 }
 
 .blog_options a:hover{
@@ -137,15 +116,10 @@ header{
     flex-flow: row wrap;
     justify-content:center;
     align-content:center;
-    /* gap:15px; */
-    /* flex-flow:column wrap; */
 }
 
 .project > header{
-    /* background-color:lavender;
-    border: solid 2px thistle; */
     text-align:center;
-    /* padding:0px; */
     margin:0px;
 }
 
@@ -185,14 +159,13 @@ header{
     .intro{
         grid-template-columns: 1fr 1fr;
         justify-items:center;
-        /* justify-content:center; */
         column-gap:0px;
         padding:20px;
     }
     .intro img { 
         width:250px;
     }
-
+    
     .contact-form input[type=text], legend{
         width: 300px;
     }
