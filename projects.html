@@ -12,47 +12,107 @@
     <header>
       <nav>
           <ul class="nav_links">
-            <li class="active"><a href="index.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html">About</a></li>
+            <li class="active"><a href="projects.html">Projects</a></li>
             <li><a href="blog.html">Blog</a></li>
           </ul>
         </nav>
     </header>
     <main class="container" id = "main">
-        <div class = "intro">
-            <img id="headshot" src = "images/headshot.png" alt="Headshot"/>
-            <p>It's nice to see you! My name is Yasemin Gunal and I am a third-year
-                at the University of Michigan School of Information <a href = "https://www.si.umich.edu/">(UMSI)</a> where I study 
-            data analytics. 
-            <br><br>
-            I am an instructional aide for SI 106, a consultant at
-              <a href = "https://www.michiganrcg.com/">REACH</a>, 
-            a research assistant to Dr. Sun Young Park, and an analyst for the 
-            UM Athletics Sports Performance and Nutrition Team! </p>
+      <div class="overview">
+        <h2>My Recent Projects</h2>
+        <p>These are a couple of projects I've completed through school & extracurriculars
+          that I had fun with!
+        </p>
+      </div>
+      <div class="projects">
+        <div class = "project">
+            <header>
+              <img id="athletics" src="images/athleticsCC.png" alt="UM Athletics Logo" width="200px"/>
+              <h3>UM Sports Performance and Nutrition</h3>
+            </header>
+            <p>My goal for this project was two-fold. I wanted to compare bone strength
+              in the athletes of aquatic sports and athletes of land-based sports and to
+              pinpoint solutions for weak bones so athletes can avoid bone related
+              injuries in the future.
+            </p>
+            <p>If you're interested in more details, <a id="poster" href="/assets/poster.pdf">here is my poster presentation</a> including
+              my methods, analysis, and findings. 
+            </p>
+            
         </div>
-        <div class="contact-form">
-          <form action="https://formspree.io/f/mwkzagpl" method="post">
-            <fieldset>
-              <legend>Contact Me</legend>
-              <p>Feel free to shoot me a quick message about anything!</p>
-              <label for="name">Name: <br>
-              <input type="text" name="name" id="contact-name"><br/>
-            </label>
-              <label for="email">Email: <br>
-              <input type="text" name="email" id="contact-email"><br/>
-            </label>
-              <label for="message">Message: <br>
-              <input type="text" name="message" id="contact-message">
-            </label>
-            </fieldset>
-            <input type="submit" value="Send Message">
-          </form>
-        </div>
+        <br>
+        <div class = "project">
+          <header>
+            <img id="gale" src="images/galelogo.png" alt="Gale Logo" width="200px"/>
+            <h3>Gale Publishing Co.</h3>
+          </header>
+
+          <p>This was a fun consulting project I worked on through REACH Consulting Group. 
+            I was responsible for providing recommendations on how Gale Publishing Co. could 
+          optimize their subscription renewal process based on their customer demographics data.</p>
+          <div class="github">
+            <a href="https://github.com/yasemingunal/ReachGaleProject">GitHub Repo</a>
+          </div>
+      </div>
+      <br>
+      <div class = "project">
+        <header>
+          <img id="bcbsm" src="images/bcbsm.png" alt="BCBSM Logo" width="200px"/>
+          <h3>Blue Cross Blue Shield of Michigan</h3>
+        </header>
+        <p>I interned this previous summer as an Operations and Performance Management Intern.
+          A few of my responsibilities included: 
+        </p>
+        <ol>
+          <li>Updating the front and back-end of a BCBSM website through HTML&CSS and JavaScript</li>
+          <li>Writing and deploying SQL queries and stored procedures to clean large datasets</li>
+          <li>Creating technical documentation for existing ETL packages</li>
+        </ol>
+    </div>
+    <br>
+    <div class = "project">
+     
+      <header>
+        <img id="lfc" src="images/lfc.png" alt="LFC Logo" width="200px">
+        <h3>EPL Analysis</h3>
+      </header>
+      <p>I enjoy watching soccer, particularly the English Premier League. For this project, I wanted
+        to analyze: 
+      </p>
+      <ol class="epl_analysis_goals">
+        <li>How different variables can impact match outcomes</li>
+        <li>Performance statistics of certain positions</li>
+        <li>The probability of a team winning based on the half-time score</li>
+      </ol>
+      <div class="github">
+          <a href="https://github.com/yasemingunal/premier_league_data_analysis">GitHub Repo</a>
+      </div>
+  </div>
+</div>
+<div class="overview">
+  <p>Most commonly for these types of technical projects, I utilize:
+    <li>Languages: Python, R, SQL, HTML&CSS</li>
+    <li>Software: Jupyter Notebooks, VS Code, Adobe Creative Cloud, and Microsoft Office</li>
+  </p>
+</div>
+<div class="skills">
+  <div class="skills-gallery">
+    <img src="images/pylogo.png" alt="Python Icon">
+    <img src="images/htmllogo.png" alt="HTML Icon">
+    <img src="images/csslogo.png" alt="CSS Icon">
+    <img src="images/sqllogo.png" alt="SQL Icon">
+    <img src="images/jslogo.png" alt="JS Icon">
+    <img src="images/adobecclogo.jpeg" alt="Adobe Icon">
+    <img src="images/jupyterlogo.png" alt="Jupyter Icon">
+    <img src="images/officelogo.png" alt="Microsoft Icon">
+    <img src="images/vscode.png" alt="VSCode Icon">
+  </div>
+</div>
+
   </main>
-    <script src="js/amsvlog.js"></script>
     <footer>
         <p> Yasemin Gunal &copy; 2022</p>
-        <p> Connect With Me: <a href = "www.linkedin.com/in/yasemin-gunal">LinkedIn</a></p>
     </footer>
   </body>
 </html>
