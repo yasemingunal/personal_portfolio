@@ -73,14 +73,26 @@ header{
     column-gap:5px;
 }
 
-.travellist img{
-    width:300px;
+.travel_gallery{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:5px;
+    justify-items:center;
+}
+.travel_gallery img{
+    width:200px;
 }
 
-#travel{
+
+/* #travel{
     display:grid;
     grid-template-columns:1fr;
     justify-content:center;
+} */
+
+.ams_gallery{
+    display:grid;
+
 }
 
 .blog_options a:link{
@@ -99,7 +111,7 @@ header{
 }
 
 .container h2, .travel-intro{
-    text-align:center;
+    text-align:left;
 }
 
 
@@ -111,7 +123,7 @@ header{
     text-align:center;
 }
 
-.projects { 
+.projects, .skills{ 
     display:flex;
     flex-flow: row wrap;
     justify-content:center;
@@ -123,27 +135,23 @@ header{
     margin:0px;
 }
 
-.project { 
+.project{ 
     display:flex;
     flex-flow: column wrap;
-    border: solid 5px black;
-    border-radius:20px;
+    border: 3px#417dc1  solid;
     padding:15px;
     margin:10px;
     flex-basis: 350px;
     align-items:center;
 }
-.skills{
-    text-align:center;
-}
+
 .skills-gallery{
     display:flex;
     flex-flow:row wrap;
     justify-content:center;
-    border:2px solid blue;
-    border-radius:25% 50%;
 
 }
+
 .skills-gallery img{
     width:50px;
     padding:5px;
@@ -172,16 +180,28 @@ header{
 
     /* ---- PROJECTS SECTION ------ */
     .project { 
-        flex-basis:400px;
+        flex-basis:200px;
+    }
+    .skills-gallery{
+        padding-right:10px;
+        padding-left:10px;
     }
 
 }
 
 @media only screen and (min-width: 800px) {
-    .project { 
-        flex-basis:40%;
-    }
+    /* ---- ABOUT SECTION ------ */
     .contact-form input[type=text], legend{
         width: 400px;
     }
+    /* ---- PROJECTS SECTION ------ */
+
+    .project { 
+        flex-basis:40%;
+    }
+    .skills-gallery{
+        padding:0px;
+    }
+
+
 }
