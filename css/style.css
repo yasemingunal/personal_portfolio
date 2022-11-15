@@ -54,7 +54,6 @@ header{
     justify-content:center;
     text-align:center;
     padding:20px;
-    /* border: 2px solid tan; */
 }
 
 .contact-form input[type=text], legend{
@@ -81,6 +80,7 @@ header{
 }
 .travel_gallery img{
     width:200px;
+    height:150px;
 }
 
 
@@ -116,7 +116,7 @@ header{
 
 
 /* ---- PROJECTS SECTION ------ */
-.container > h2, .container > h1, .overview{
+.container > h2, .container > h1, .overview h2, .overview{
     text-align:center;
 }
 .github{
