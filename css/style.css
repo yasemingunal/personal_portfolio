@@ -77,6 +77,9 @@ header{
     grid-template-columns:1fr 1fr;
     gap:5px;
     justify-items:center;
+    background-color:#e3dac9;
+    margin:10px;
+    padding:30px 20px;
 }
 .travel_gallery img{
     width:200px;
@@ -90,10 +93,6 @@ header{
     justify-content:center;
 } */
 
-.ams_gallery{
-    display:grid;
-
-}
 
 .blog_options a:link{
     text-decoration:none;
@@ -138,7 +137,8 @@ header{
 .project{ 
     display:flex;
     flex-flow: column wrap;
-    border: 3px#417dc1  solid;
+    /* border: 3px#417dc1  solid; */
+    border:7px navy solid;
     padding:15px;
     margin:10px;
     flex-basis: 350px;
@@ -156,6 +156,9 @@ header{
     width:50px;
     padding:5px;
     margin:20px;
+}
+header > h2{
+    justify-items:center;
 }
 
 /* .github a::before{
@@ -187,6 +190,14 @@ header{
         padding-left:10px;
     }
 
+    /* ----- BLOG SECTION ------- */
+    .travel_gallery{
+        grid-template-columns:repeat(3, 1fr);
+        justify-content:center;
+        row-gap:30px;
+    }
+
+
 }
 
 @media only screen and (min-width: 800px) {
@@ -202,6 +213,16 @@ header{
     .skills-gallery{
         padding:0px;
     }
-
+    /* ----- BLOG SECTION ------- */
+    #travel h2, #entertainment h2{
+        text-align:center;
+    }
+    .travel_gallery{
+        column-gap:0px;
+    }
+    .travel_gallery > img {
+        width:225px;
+    }
+    
 
 }
