@@ -7,9 +7,10 @@ header{
     margin:20px 0px 50px;
 }
 
-/* footer { 
-
-} */
+footer{ 
+    background-color: #e3dac9;
+    padding:10px;
+}
 
  /* PART 1: STYLING NAVIGATION BAR */
 
@@ -137,8 +138,8 @@ header{
 .project{ 
     display:flex;
     flex-flow: column wrap;
-    /* border: 3px#417dc1  solid; */
-    border:7px navy solid;
+    border: 8px #e3dac9 solid;
+    /* background-color:#e3dac9; */
     padding:15px;
     margin:10px;
     flex-basis: 350px;
