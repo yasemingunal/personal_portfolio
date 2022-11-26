@@ -29,12 +29,17 @@ footer{
     text-transform:uppercase;
     text-decoration:none;
 }
-.nav_links a:hover, .active{
+.nav_links a:hover, .active, a:active{
     text-decoration:underline;
     font-weight:bold
 }
 
 /* ---- ABOUT SECTION ------ */
+
+h1{
+    text-decoration:underline solid tan;
+    text-transform:uppercase;
+}
 
 
 .intro{
@@ -73,6 +78,10 @@ footer{
     column-gap:5px;
 }
 
+.entertainment_gallery img { 
+    border:solid tan 5px;
+    margin:10px;
+}
 .travel_gallery{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -87,17 +96,9 @@ footer{
     height:150px;
 }
 
-
-/* #travel{
-    display:grid;
-    grid-template-columns:1fr;
-    justify-content:center;
-} */
-
-
 .blog_options a:link{
-    text-decoration:none;
-    color:black;
+    text-decoration:underline solid;
+    color:tan;
 }
 
 .blog_options li{
@@ -107,13 +108,14 @@ footer{
 
 .blog_options a:hover{
     font-weight:bold;
-    text-decoration:underline;
+    text-decoration:underline dashed;
+    text-transform:uppercase;
 }
-
-.container h2, .travel-intro{
-    text-align:left;
+.blog_options a:visited{
+    color:tan;
+    font-weight:bold;
+    text-decoration:underline solid;
 }
-
 
 /* ---- PROJECTS SECTION ------ */
 .container > h2, .container > h1, .overview h2, .overview{
@@ -144,6 +146,7 @@ footer{
     margin:10px;
     flex-basis: 350px;
     align-items:center;
+    align-content:center;
 }
 
 .skills-gallery{
@@ -166,7 +169,7 @@ header > h2{
     content: url("/images/githublogo.png");
 } */
 
-@media only screen and (min-width: 650px){
+@media only screen and (min-width: 481px){ /*for tablets */
     /* ---- ABOUT SECTION ------ */
     .intro{
         grid-template-columns: 1fr 1fr;
@@ -175,7 +178,7 @@ header > h2{
         padding:20px;
     }
     .intro img { 
-        width:250px;
+        width:200px;
     }
     
     .contact-form input[type=text], legend{
@@ -193,18 +196,21 @@ header > h2{
 
     /* ----- BLOG SECTION ------- */
     .travel_gallery{
-        grid-template-columns:repeat(3, 1fr);
-        justify-content:center;
-        row-gap:30px;
+        background-color:white;
     }
-
-
+    .travel_gallery img{
+        border:solid #e3dac9 10px;
+    }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 769px) { /* for laptops and desktops */
     /* ---- ABOUT SECTION ------ */
     .contact-form input[type=text], legend{
         width: 400px;
+    }
+
+    .intro img { 
+        width: 270px;
     }
     /* ---- PROJECTS SECTION ------ */
 
@@ -215,6 +221,11 @@ header > h2{
         padding:0px;
     }
     /* ----- BLOG SECTION ------- */
+    .travel_gallery{
+        grid-template-columns:repeat(3, 1fr);
+        justify-content:center;
+
+    }
     #travel h2, #entertainment h2{
         text-align:center;
     }
@@ -225,5 +236,16 @@ header > h2{
         width:225px;
     }
     
+    .entertainment_gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items:center;
+        text-align:center;
+        column-gap:30px;
+    }
+    .entertainment_gallery img{ 
+       grid-row: 1/2;
+       /* justify-self:center; */
+
+    }
 
 }
