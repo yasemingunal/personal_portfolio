@@ -180,15 +180,12 @@ h1{
     .project { 
         flex-basis:200px;
     }
-    /* .skills-gallery{
-        padding-right:10px;
-        padding-left:10px;
-    } */
-
     .skills_descrip{
         justify-items:center;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: repeat(2, 1fr 3fr);
+        column-gap:7px;
     }
+
 
     /* ----- BLOG SECTION ------- */
     .travel_gallery{
@@ -227,22 +224,20 @@ h1{
 
     /* ---- PROJECTS SECTION ------ */
 
-    /* .project { 
-        flex-basis:40%;
-    } */
-    /* .skills-gallery{
-        padding:0px;
-    } */
     .skills_descrip{
-        grid-template-columns: 1fr 3fr 1fr 3fr;
-
+        grid-template-columns:repeat(3, 1fr 3fr);
         justify-items:right;
         column-gap:20px;
     }
 
-    .projects{
-        grid-template-columns:1fr 1fr;
+    .skills_descrip img{
+        width:75px;
     }
+    .projects{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+
 
     /* ----- BLOG SECTION ------- */
     .travel_gallery{
