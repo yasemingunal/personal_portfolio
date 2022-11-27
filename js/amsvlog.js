@@ -9,3 +9,15 @@ function goResume(){
 function goLinkedin(){
     window.location="www.linkedin.com/in/yasemin-gunal";
 }
+
+function goPoster(){
+    window.location="/assets/poster.pdf";
+}
+
+function goEPLGitHub(){
+    window.location = "https://github.com/yasemingunal/premier_league_data_analysis";
+}
+
+function goGaleGitHub(){
+    window.location = "https://github.com/yasemingunal/ReachGaleProject";
+}
