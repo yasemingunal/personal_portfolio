@@ -19,103 +19,80 @@
         </nav>
     </header>
     <main class="container" id = "main">
-      <div class="overview">
-        <h1>My Recent Projects</h1>
-        <p>These are a couple of projects I've completed through school & extracurriculars
-          that I had fun with!
+      <h1>Skillset</h1>
+        <div class="skills_descrip">
+          <img id="edaicon" src="images/edaicon.png" alt="EDA Icon">
+          <p><b>Exploratory Data Analysis: </b>I often use Python and Pandas libraries in Jupyter Lab to to draw
+            initial insights about a dataset
+          </p>
+          <img id="visicon" src="images/visicon.png" alt="Visualization Icon">
+          <p><b>Data Visualization: </b>I am highly experienced in MatPlotLib and Seaborn
+          </p>
+          <img id="predicon" src="images/MLicon.png" alt="Predictive Analytics Icon">
+          <p><b>Predictive Analytics: </b>I have become proficient in scikit-learn for machine learning and classification
+          </p>
+          <img id="dataicon" src="images/datamanicon.png" alt="Data Management Icon">
+          <p><b>Data Management: </b>I am  proficient in SQL and SQL Server Management Studio to clean and manipulate vast databases.</p>
+          <img id="researchicon" src="images/researchicon.png" alt="Research Icon">
+          <p><b>Research: </b>I enjoy conducting literature reviews to supplement my data-driven approaches (see my projects!)
+          </p>
+        </div>
+
+      <div class = "projects_intro">
+        <h1>Portfolio</h1>
+        <p>Here is a glance at a few of my most recent and relevant projects. Some of these were 
+          completed for coursework, for extracurriculars, or simply through my own interest.
         </p>
       </div>
       <div class="projects">
-        <div class = "project">
-            <header>
-              <img id="athletics" src="images/athleticsCC.png" alt="UM Athletics Logo" width="200px"/>
-              <h2>UM Sports Performance and Nutrition</h2>
-            </header>
+          <div class="project">
+            <img id="athletics" src="images/athleticsCC.png" alt="UM Athletics Logo" width="200px"/>
+            <h2>UM Sports Performance and Nutrition</h2>
             <p>My goal for this project was two-fold. I wanted to compare bone strength
               in the athletes of aquatic sports and athletes of land-based sports and to
               pinpoint solutions for weak bones so athletes can avoid bone related
               injuries in the future.
             </p>
-            <p>If you're interested in more details, <a id="poster" href="/assets/poster.pdf">here is my poster presentation</a> including
-              my methods, analysis, and findings. 
-            </p>
-            
-        </div>
-        <br>
-        <div class = "project">
-          <header>
+            <button onclick="goPoster();" class="proj_button">View Poster</button>
+          </div>
+          <div class="project">
             <img id="gale" src="images/galelogo.png" alt="Gale Logo" width="200px"/>
             <h2>Gale Publishing Co.</h2>
-          </header>
-
-          <p>This was a fun consulting project I worked on through REACH Consulting Group. 
-            I was responsible for providing recommendations on how Gale Publishing Co. could 
-          optimize their subscription renewal process based on their customer demographics data.</p>
-          <div class="github">
-            <a href="https://github.com/yasemingunal/ReachGaleProject">GitHub Repo</a>
+            <p>This was a fun consulting project I worked on through REACH Consulting Group. 
+              I was responsible for providing recommendations on how Gale Publishing Co. could 
+            optimize their subscription renewal process based on their customer demographics data.</p>
+            <button onclick="goGaleGitHub();" class="proj_button">Visit GitHub Repo</button>
+          </div>
+          <div class="project">
+            <img id="bcbsm" src="images/bcbsm.png" alt="BCBSM Logo" width="200px"/>
+          <h2>Blue Cross Blue Shield of Michigan</h2>
+          <p>I interned this previous summer as an Operations and Performance Management Intern.
+            A few of my responsibilities included: 
+          </p>
+          <ol>
+            <li>Updating the front and back-end of a BCBSM website through HTML&CSS and JavaScript</li>
+            <li>Writing and deploying SQL queries and stored procedures to clean large datasets</li>
+            <li>Creating technical documentation for existing ETL packages</li>
+          </ol>
+          </div>
+          <div class="project">
+            <img id="lfc" src="images/lfc.png" alt="LFC Logo" width="200px">
+             <h2>EPL Analysis</h2>
+             <p>I enjoy watching soccer, particularly the English Premier League. For this project, I wanted
+              to analyze: 
+            </p>
+            <ol class="epl_analysis_goals">
+              <li>How different variables can impact match outcomes</li>
+              <li>Performance statistics of certain positions</li>
+              <li>The probability of a team winning based on the half-time score</li>
+            </ol>
+            <button onclick="goEPLGitHub();" class="proj_button">Visit GitHub Repo</button>
           </div>
       </div>
-      <br>
-      <div class = "project">
-        <header>
-          <img id="bcbsm" src="images/bcbsm.png" alt="BCBSM Logo" width="200px"/>
-          <h2>Blue Cross Blue Shield of Michigan</h2>
-        </header>
-        <p>I interned this previous summer as an Operations and Performance Management Intern.
-          A few of my responsibilities included: 
-        </p>
-        <ol>
-          <li>Updating the front and back-end of a BCBSM website through HTML&CSS and JavaScript</li>
-          <li>Writing and deploying SQL queries and stored procedures to clean large datasets</li>
-          <li>Creating technical documentation for existing ETL packages</li>
-        </ol>
-    </div>
-    <br>
-    <div class = "project">
-     
-      <header>
-        <img id="lfc" src="images/lfc.png" alt="LFC Logo" width="200px">
-        <h2>EPL Analysis</h2>
-      </header>
-      <p>I enjoy watching soccer, particularly the English Premier League. For this project, I wanted
-        to analyze: 
-      </p>
-      <ol class="epl_analysis_goals">
-        <li>How different variables can impact match outcomes</li>
-        <li>Performance statistics of certain positions</li>
-        <li>The probability of a team winning based on the half-time score</li>
-      </ol>
-      <div class="github">
-          <a href="https://github.com/yasemingunal/premier_league_data_analysis">GitHub Repo (including written report)</a>
-      </div>
-  </div>
-</div>
-<div class="overview">
-  <h2>Professional Skillset:
-    <ul>
-      <li>Languages: Python, R, SQL, HTML&CSS</li>
-      <li>Software: Jupyter Notebooks, VS Code, Adobe Creative Cloud, and Microsoft Office</li>
-    </ul>
-  </h2>
-</div>
-<div class="skills">
-  <div class="skills-gallery">
-    <img src="images/pylogo.png" alt="Python Icon">
-    <img src="images/htmllogo.png" alt="HTML Icon">
-    <img src="images/csslogo.png" alt="CSS Icon">
-    <img src="images/sqllogo.png" alt="SQL Icon">
-    <img src="images/jslogo.png" alt="JS Icon">
-    <img src="images/adobecclogo.jpeg" alt="Adobe Icon">
-    <img src="images/jupyterlogo.png" alt="Jupyter Icon">
-    <img src="images/officelogo.png" alt="Microsoft Icon">
-    <img src="images/vscode.png" alt="VSCode Icon">
-  </div>
-</div>
-
   </main>
+  <script src="js/amsvlog.js"></script>
   <footer>
     <p> Yasemin Gunal &copy; 2022</p>
-    <p> Connect With Me: <a href = "www.linkedin.com/in/yasemin-gunal">LinkedIn</a></p>
 </footer>
   </body>
 </html>
