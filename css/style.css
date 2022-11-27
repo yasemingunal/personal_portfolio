@@ -12,33 +12,34 @@ footer{
     padding:10px;
 }
 
- /* PART 1: STYLING NAVIGATION BAR */
+ /* NAVIGATION BAR/HEADER */
+
+.nav_links{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: solid 2px #e3dac9;
+    padding-bottom:10px;
+    justify-items:center;
+ }
 
 .nav_links li{
-    display:inline;
     list-style:none;
-    float:right;
 }
 
 .nav_links a{
     color:black;
-}
-
-.nav_links a:link{
-    padding:12px;
-    text-transform:uppercase;
     text-decoration:none;
 }
-.nav_links a:hover, .active, a:active{
-    text-decoration:underline;
-    font-weight:bold
+
+.nav_links a:hover, .active, .nav_links a:active{
+    border-bottom: solid 3px #e3dac9;
+    font-weight:bolder;
 }
 
 /* ---- ABOUT SECTION ------ */
 
 h1{
     border-bottom: 5px solid #e3dac9;
-    /* text-transform:uppercase; */
 }
 
 .intro{ 
@@ -153,51 +154,13 @@ h1{
     margin:20px;
 }
 
-/* 
-.projects, .skills{ 
-    display:flex;
-    flex-flow: row wrap;
-    justify-content:center;
-    align-content:center;
-}
-
-.project > header{
-    text-align:center;
-    margin:0px;
-}
-
-.project{ 
-    display:flex;
-    flex-flow: column wrap;
-    border: 8px #e3dac9 solid;
-    padding:15px;
-    margin:10px;
-    flex-basis: 350px;
-    align-items:center;
-    align-content:center;
-} */
-
-/* .skills-gallery{
-    display:flex;
-    flex-flow:column wrap;
-    justify-content:center;
-
-}
-
-.skills-gallery img{
-    width:50px;
-    padding:5px;
-    margin:20px;
-}
-header > h2{
-    justify-items:center;
-} */
 
 /* .github a::before{
     content: url("/images/githublogo.png");
 } */
 
 @media only screen and (min-width: 481px){ /*for tablets */
+
     /* ---- ABOUT SECTION ------ */
     .intro{
         grid-template-columns: 1fr 2fr;
@@ -237,6 +200,15 @@ header > h2{
 }
 
 @media only screen and (min-width: 769px) { /* for laptops and desktops */
+    
+    .nav_links{
+        grid-template-columns:1fr;
+        justify-items:right;
+    }
+    .nav_links li{
+        padding-bottom:7px;
+    }
+
     /* ---- ABOUT SECTION ------ */
     .contact-form input[type=text], legend{
         width: 400px;
