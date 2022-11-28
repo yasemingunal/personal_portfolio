@@ -38,7 +38,7 @@ footer{
 
 /* ---- ABOUT SECTION ------ */
 
-h1{
+h1, .blog_content h2{
     border-bottom: 5px solid #e3dac9;
 }
 
@@ -58,7 +58,6 @@ h1{
 }
 
 .intro_button:hover, .proj_button:hover{
-    /* padding:12px 15px; */
     font-weight:bolder;
     border:5px solid tan;
 }
@@ -84,51 +83,51 @@ h1{
 }
 
 /* ---- BLOG SECTION ------ */
-.entertainment_gallery{
-    display:grid;
-    align-items:center;
-    grid-template-columns:1fr 4fr;
-    column-gap:5px;
-}
-
-.entertainment_gallery img { 
-    border:solid tan 5px;
-    margin:10px;
-}
-.travel_gallery{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:5px;
-    justify-items:center;
+.blog_options a, .blog_options a:active, .blog_options:visited{
     background-color:#e3dac9;
-    margin:10px;
-    padding:30px 20px;
+    font: black;
+    padding: 10px 10px;
+    margin: 10px;
+    text-decoration:none;
 }
-.travel_gallery img{
-    width:200px;
-    height:150px;
-}
-
-.blog_options a:link{
-    text-decoration:underline solid;
-    color:tan;
+.blog_options{
+    display:flex;
+    justify-content:center;
 }
 
-.blog_options li{
-    list-style:none;
+#entertainment h3{
     text-align:center;
 }
+#book_gallery, #podcast_gallery{
+    display:flex;
+    border: 5px solid  #e3dac9;
+    background-color:#e3dac9;
+    border-radius:25px;
+    padding: 10px 20px;
+    margin: 20px;
+    justify-content:space-evenly;
+}
 
-.blog_options a:hover{
-    font-weight:bold;
-    text-decoration:underline dashed;
-    text-transform:uppercase;
+#podcast_gallery img, #book_gallery img{
+    padding:5px;
 }
-.blog_options a:visited{
-    color:tan;
-    font-weight:bold;
-    text-decoration:underline solid;
+
+.travel_gallery{
+    display:flex;
+    flex-flow:row wrap;
+    background-color:#e3dac9;
+    justify-content:space-evenly;
+    padding:10px;
+    margin:10px;
 }
+
+.travel_gallery img{
+    width:175px;
+    height:120px;
+    padding:5px;
+    border:5px solid white;
+}
+
 
 /* ---- PROJECTS SECTION ------ */
 
@@ -188,12 +187,18 @@ h1{
 
 
     /* ----- BLOG SECTION ------- */
-    .travel_gallery{
+    #book_gallery, #podcast_gallery{
+        margin:auto 10%;
+    }
+    #book_gallery img, #podcast_gallery img{
+        padding:10px;
+    }
+    /* .travel_gallery{
         background-color:white;
     }
     .travel_gallery img{
         border:solid #e3dac9 10px;
-    }
+    } */
 }
 
 @media only screen and (min-width: 769px) { /* for laptops and desktops */
@@ -237,10 +242,10 @@ h1{
         grid-template-columns:repeat(2, 1fr);
     }
 
-
-
     /* ----- BLOG SECTION ------- */
-    .travel_gallery{
+
+
+    /* .travel_gallery{
         grid-template-columns:repeat(3, 1fr);
         justify-content:center;
 
@@ -253,18 +258,15 @@ h1{
     }
     .travel_gallery > img {
         width:225px;
-    }
-    
-    .entertainment_gallery{
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-items:center;
-        text-align:center;
-        column-gap:30px;
-    }
-    .entertainment_gallery img{ 
-       grid-row: 1/2;
-       /* justify-self:center; */
+    } */
 
+    #book_gallery, #podcast_gallery{
+        margin:auto 20%;
     }
-
+    #book_gallery{
+        justify-content:flex-start;
+    }
+    #podcast_gallery{
+        justify-content:flex-end;
+    }
 }
