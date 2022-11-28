@@ -17,7 +17,7 @@ footer{
 .nav_links{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border-bottom: solid 2px #e3dac9;
+    border-bottom: solid 2px #726d62;
     padding-bottom:10px;
     justify-items:center;
  }
@@ -32,14 +32,15 @@ footer{
 }
 
 .nav_links a:hover, .active, .nav_links a:active{
-    border-bottom: solid 3px #e3dac9;
+    border-bottom: solid 3px #726d62;
     font-weight:bolder;
 }
 
 /* ---- ABOUT SECTION ------ */
 
 h1, .blog_content h2{
-    border-bottom: 5px solid #e3dac9;
+    border-bottom: 3px solid #726d62;
+     /* #839a87; */
 }
 
 .intro{ 
@@ -50,21 +51,23 @@ h1, .blog_content h2{
 
 
 .intro_button, .proj_button{
-    background-color:#e3dac9;
+    background-color:#726d62;
     border:none;
-    color:black;
+    color:white;
     padding:10px 15px;
     font-weight:bold;
 }
 
 .intro_button:hover, .proj_button:hover{
     font-weight:bolder;
-    border:5px solid tan;
+    border:5px solid #726d62;
 }
 
 .intro img {
-    padding-left:10px;
+    padding:4px;
     width:150px;
+    background-color:#726d62;
+
 }
 
 .contact-form{
@@ -76,27 +79,43 @@ h1, .blog_content h2{
 
 .contact-form input[type=text], legend{
     margin:5px;
-    border: 2px tan solid;
+    border: 2px #726d62 solid;
     padding:10px;
     text-transform:uppercase;
     width:200px;
 }
 
 /* ---- BLOG SECTION ------ */
-.blog_options a, .blog_options a:active, .blog_options:visited{
+.blog_options a, .blog_options:visited{
     background-color:#e3dac9;
-    font: black;
+    color: black;
     padding: 10px 10px;
-    margin: 10px;
+    margin: 20px 20px 0px 20px;
     text-decoration:none;
+    box-shadow:3px 3px #726d62;
 }
+.blog_options a:hover{
+    font:black;
+    font-weight:bold;
+    border: solid 3px #e3dac9;
+    text-decoration:underline;
+}
+
+.blog_options a:active{
+    color:black;
+    font-weight:bolder;
+}
+
 .blog_options{
     display:flex;
+    position:sticky;
+    top:0;
     justify-content:center;
+    background-color:white;
 }
 .blog_content h2::before{
-    content:'•';
-    color:salmon;
+    content:'\21B3';
+    color: #5d5b7f;
 }
 
 #entertainment h3{
@@ -107,36 +126,20 @@ h1, .blog_content h2{
     visibility:hidden;
 }
 
-#book_gallery, #podcast_gallery{
+#book_gallery, #podcast_gallery, #amsterdam_gallery, #london_gallery, #turkey_gallery{
     display:flex;
-    /* border: 5px solid  #e3dac9;
-    background-color:#e3dac9;
-    border-radius:25px; */
-    padding: 10px 20px;
-    margin: 20px;
     justify-content:center;
 }
-
-#podcast_gallery img, #book_gallery img{
+#book_gallery img, #podcast_gallery img, #amsterdam_gallery img, #london_gallery img, #turkey_gallery img{
     padding:5px;
-}
-
-.travel_gallery{
-    display:flex;
-    flex-flow:row wrap;
-    background-color:#e3dac9;
-    justify-content:space-evenly;
-    padding:10px;
-    margin:10px;
 }
 
 .travel_gallery img{
     width:175px;
-    height:120px;
-    padding:5px;
-    border:5px solid white;
 }
-
+.media_section, .travel_section{
+    background-color:rgb(239, 233, 226);
+}
 
 /* ---- PROJECTS SECTION ------ */
 
@@ -156,16 +159,11 @@ h1, .blog_content h2{
 }
 
 .project{
-    border: 4px #e3dac9 solid;
+    border: 4px #726d62 solid;
     text-align:center;
     padding: 20px 20px;
     margin:20px;
 }
-
-
-/* .github a::before{
-    content: url("/images/githublogo.png");
-} */
 
 @media only screen and (min-width: 481px){ /*for tablets */
 
@@ -196,20 +194,21 @@ h1, .blog_content h2{
 
 
     /* ----- BLOG SECTION ------- */
-    #book_gallery, #podcast_gallery{
-        margin:auto 10%;
-    }
+
     #book_gallery img, #podcast_gallery img{
         padding:5px;
         width:120px;
     }
-
-    /* .travel_gallery{
-        background-color:white;
+    #amsterdam_gallery, #london_gallery, #turkey_gallery{
+        flex-flow:row wrap;
+        justify-content:center;
+        justify-items:center;
     }
-    .travel_gallery img{
-        border:solid #e3dac9 10px;
-    } */
+    #amsterdam_gallery img, #london_gallery img, #turkey_gallery img{
+        width:150px;
+    }
+
+    
 }
 
 @media only screen and (min-width: 769px) { /* for laptops and desktops */
@@ -255,22 +254,6 @@ h1, .blog_content h2{
 
     /* ----- BLOG SECTION ------- */
 
-
-    /* .travel_gallery{
-        grid-template-columns:repeat(3, 1fr);
-        justify-content:center;
-
-    }
-    #travel h2, #entertainment h2{
-        text-align:center;
-    }
-    .travel_gallery{
-        column-gap:0px;
-    }
-    .travel_gallery > img {
-        width:225px;
-    } */
-
     .section_title_small{
         visibility:hidden;
     }
@@ -284,9 +267,12 @@ h1, .blog_content h2{
         align-items:center;
         padding:10px;
     }
+    #amsterdam_gallery img, #london_gallery img, #turkey_gallery img{
+        width:200px;
+    }
 
-    #book_gallery, #podcast_gallery{
-        justify-content:center;
+    #book_gallery, #podcast_gallery, #amsterdam_gallery, #london_gallery, #turkey_gallery{
+        justify-content:flex-start;
         align-items:center;
     }
 }
@@ -300,4 +286,17 @@ h1, .blog_content h2{
     .section_title_large{
         padding-right:150px;
     }
+
+    .projects{
+        grid-template-columns:repeat(3, 1fr);
+    }
+
+    #amsterdam_gallery, #london_gallery, #turkey_gallery{
+        justify-content:flex-end;
+    }
+
+    #amsterdam_gallery img, #london_gallery img, #turkey_gallery img{
+        width:300px;
+    }
+
 }
