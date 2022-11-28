@@ -94,18 +94,27 @@ h1, .blog_content h2{
     display:flex;
     justify-content:center;
 }
+.blog_content h2::before{
+    content:'•';
+    color:salmon;
+}
 
 #entertainment h3{
     text-align:center;
 }
+
+.section_title_large{
+    visibility:hidden;
+}
+
 #book_gallery, #podcast_gallery{
     display:flex;
-    border: 5px solid  #e3dac9;
+    /* border: 5px solid  #e3dac9;
     background-color:#e3dac9;
-    border-radius:25px;
+    border-radius:25px; */
     padding: 10px 20px;
     margin: 20px;
-    justify-content:space-evenly;
+    justify-content:center;
 }
 
 #podcast_gallery img, #book_gallery img{
@@ -191,8 +200,10 @@ h1, .blog_content h2{
         margin:auto 10%;
     }
     #book_gallery img, #podcast_gallery img{
-        padding:10px;
+        padding:5px;
+        width:120px;
     }
+
     /* .travel_gallery{
         background-color:white;
     }
@@ -260,13 +271,33 @@ h1, .blog_content h2{
         width:225px;
     } */
 
+    .section_title_small{
+        visibility:hidden;
+    }
+    .section_title_large{
+        visibility:visible;
+        padding-right:40px;
+    }
+
+    #podcast_gallery img, #book_gallery img{
+        width:175px;
+        align-items:center;
+        padding:10px;
+    }
+
     #book_gallery, #podcast_gallery{
-        margin:auto 20%;
+        justify-content:center;
+        align-items:center;
     }
-    #book_gallery{
-        justify-content:flex-start;
+}
+
+@media only screen and (min-width: 1280px) {
+    #podcast_gallery img, #book_gallery img{
+        width:200px;
+        align-items:center;
+        padding:10px;
     }
-    #podcast_gallery{
-        justify-content:flex-end;
+    .section_title_large{
+        padding-right:150px;
     }
 }
