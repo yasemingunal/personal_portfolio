@@ -6,7 +6,7 @@ function goResume(){
 }
 
 function goLinkedin(){
-    window.location="www.linkedin.com/in/yasemin-gunal";
+    window.location="../www.linkedin.com/in/yasemin-gunal";
 }
 
 function goPoster(){
