@@ -2,7 +2,7 @@ document.getElementById('contact-message').style.height="75px";
 
 
 function goResume(){
-    window.location="/assets/resume.pdf";
+    window.location="assets/resume.pdf";
 }
 
 function goLinkedin(){
@@ -10,7 +10,7 @@ function goLinkedin(){
 }
 
 function goPoster(){
-    window.location="/assets/FinalPosterPDF.pdf";
+    window.location="assets/FinalPosterPDF.pdf";
 }
 
 function goEPLGitHub(){
