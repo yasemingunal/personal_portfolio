@@ -1,3 +1,15 @@
+
+.skip{
+    position:absolute;
+    padding:6px;
+    top:-40px;
+}
+
+.skip:focus{
+    top:100px;
+    color:black;
+}
+
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
 }
