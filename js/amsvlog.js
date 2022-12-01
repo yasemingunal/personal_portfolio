@@ -1,4 +1,3 @@
-// var amsvlog = document.querySelector("#ams_video_1");
 document.getElementById('contact-message').style.height="75px";
 
 
@@ -11,7 +10,7 @@ function goLinkedin(){
 }
 
 function goPoster(){
-    window.location="/assets/poster.pdf";
+    window.location="/assets/FinalPosterPDF.pdf";
 }
 
 function goEPLGitHub(){
@@ -21,3 +20,4 @@ function goEPLGitHub(){
 function goGaleGitHub(){
     window.location = "https://github.com/yasemingunal/ReachGaleProject";
 }
+
