@@ -20,39 +20,53 @@ header{
 }
 
 footer{ 
-    background-color: #e3dac9;
+    background-color: rgb(239, 233, 226);
     padding:10px;
+    margin:10px;
 }
+
 
  /* NAVIGATION BAR/HEADER */
 
 .nav_links{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border-bottom: solid 2px #726d62;
-    padding-bottom:10px;
+    background-color:rgb(239, 233, 226);
+    padding:20px 10px;
     justify-items:center;
  }
 
 .nav_links li{
     list-style:none;
+
 }
 
 .nav_links a{
-    color:black;
     text-decoration:none;
+    background-color: #726d62;
+    color:white;
+    padding:10px 15px;
 }
 
-.nav_links a:hover, .active, .nav_links a:active{
-    border-bottom: solid 3px #726d62;
+.nav_links a:hover{
+    border: solid 5px white;
     font-weight:bolder;
+}
+
+.active{
+    font-weight:bolder;
+    text-decoration:underline;
+}
+
+.active::marker{
+    content:'\25C6';
+    color:black;
 }
 
 /* ---- ABOUT SECTION ------ */
 
 h1, .blog_content h2{
     border-bottom: 3px solid #726d62;
-     /* #839a87; */
 }
 
 .intro{ 
@@ -82,11 +96,30 @@ h1, .blog_content h2{
 
 }
 
+.mycard{
+    background-color:rgb(239, 233, 226);
+    padding:10px 20px;;
+}
+
+.aboutme_card{
+    border:2px solid #726d62;
+    padding:5px;
+}
+
+.aboutme_card > h1{
+    background-color:rgb(239, 233, 226);
+    padding:20px;
+    margin:0px;
+}
+
 .contact-form{
     display:flex;
     justify-content:center;
     text-align:center;
     padding:20px;
+}
+#contact-legend{
+    background-color:rgb(239, 233, 226);
 }
 
 .contact-form input[type=text], legend{
@@ -95,6 +128,8 @@ h1, .blog_content h2{
     padding:10px;
     text-transform:uppercase;
     width:200px;
+
+
 }
 
 /* ---- BLOG SECTION ------ */
@@ -189,7 +224,6 @@ h1, .blog_content h2{
     .intro img { 
         width:150px;
     }
-    
     .contact-form input[type=text], legend{
         width: 300px;
     }
@@ -230,16 +264,37 @@ h1, .blog_content h2{
         justify-items:right;
     }
     .nav_links li{
-        padding-bottom:7px;
+        padding-top:15px;
+    }
+
+    .nav_links a{
+        background-color: rgb(239, 233, 226);
+        color:black;
+        padding-bottom:10px;
+    }
+
+    .nav_links a:hover{
+        border:none;
+        border-bottom:2px solid black;
     }
 
     /* ---- ABOUT SECTION ------ */
     .contact-form input[type=text], legend{
         width: 400px;
     }
+    .mycard{
+        background-color:white;
+    }
+    .mycard > h1{
+        background-color:rgb(239, 233, 226);
+        padding:10px 5px;
+        margin:0px;
+    }
     .aboutme_card{
         align-self:center;
         padding-bottom:100px;
+        background-color:white;
+        border:none;
     }
     .intro{
         grid-template-columns:1fr 3fr;
@@ -279,6 +334,7 @@ h1, .blog_content h2{
         align-items:center;
         padding:10px;
     }
+
     #amsterdam_gallery img, #london_gallery img, #turkey_gallery img{
         width:200px;
     }
