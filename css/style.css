@@ -20,10 +20,14 @@ header{
 }
 
 footer{ 
+    display:grid;
+    grid-template-columns:25% 75%;
     background-color: rgb(239, 233, 226);
     padding:10px;
     margin:10px;
+    justify-items:end;
 }
+
 
 
  /* NAVIGATION BAR/HEADER */
@@ -288,6 +292,9 @@ legend{
         border-bottom:2px solid black;
     }
 
+    #maps{
+        width:400px;
+    }
     /* ---- ABOUT SECTION ------ */
     .contact-form input[type=text], legend{
         width: 400px;
@@ -356,6 +363,9 @@ legend{
 }
 
 @media only screen and (min-width: 1280px) /*largest desktops*/ {
+    #maps{
+        width:600px;
+    }
     #podcast_gallery img, #book_gallery img{
         width:200px;
         align-items:center;
