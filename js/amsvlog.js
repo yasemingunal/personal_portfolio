@@ -1,4 +1,6 @@
-document.getElementById('contact-message').style.height="75px";
+var message = document.getElementById('contact-message');
+
+message.style.height="75px";
 
 
 function goResume(){
@@ -21,3 +23,8 @@ function goGaleGitHub(){
     window.location = "https://github.com/yasemingunal/ReachGaleProject";
 }
 
+
+document.querySelector("#submit_button").addEventListener("click", function(){
+    console.log("Selected a button on projects page");
+    window.alert("You are about to submit this form. Press 'OK' to continue");
+})
