@@ -367,8 +367,21 @@ legend{
     .skills_descrip img{
         width:75px;
     }
+
+    .skills_descrip img:hover{
+        width:90px;
+        border:solid 2px #726d62;
+    }
+
     .projects{
         grid-template-columns:repeat(2, 1fr);
+    }
+
+    .project{
+        background-color:rgb(239, 233, 226);
+    }
+    .project h2{
+        background-color:white;
     }
 
     /* ----- BLOG SECTION ------- */
@@ -412,6 +425,9 @@ legend{
 
     .projects{
         grid-template-columns:repeat(3, 1fr);
+    }
+    .projects:last-child(){
+        grid-column:2/-1;
     }
 
     #amsterdam_gallery, #london_gallery, #turkey_gallery{
